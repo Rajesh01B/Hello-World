@@ -4,32 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=cofee&s=solid">
+    <title>light on off</title>
     <link rel="stylesheet" href="style.css">
-    <title>Increment Counter</title>
+    
 </head>
 <body>
+    <div class="main-heading">
+        <h1>Can you turn the light on?</h1>
+        <button onclick="document.getElementById('myImage').src='lighton.png'">Turn on the light</button>
 
-    <div class="counter-container">
-        <i class="fas fa-mug-hot fa-3x"></i>
-        <div class="counter" data-target="4000"></div>
-        <span>Project Completed</span>
-    </div>
+        <img src="lightoff.png" alt="lightOffPic" id="myImage" style="height: 150px;" >
 
-    <div class="counter-container">
-        <i class="fas fa-users fa-3x"></i>
-        <div class="counter" data-target="15000"></div>
-        <span>Our Happy Clients</span>
-    </div>
+        <button onclick="document.getElementById('myImage').src='lightoff.png'">Turn on the light</button>
 
-    <div class="counter-container">
-        <i class="fas fa-tasks fa-3x"></i>
-        <div class="counter" data-target="500"></div>
-        <span>Ongoing Projects </span>
     </div>
-    <script src="script.js"></script>
+    
 </body>
 </html>
-
-<!-- data-* attributes are designed to hold custom data for custom code 
-(typically client side JS) to process. -->
