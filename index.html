@@ -1,31 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons?d=gallery&p=2&q=cofee&s=solid">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>My Note</title>
+    <title>Increment Counter</title>
 </head>
-
 <body>
-    <div class="heading">
-        <h1><i class="fas fa-sticky-note"> Deep Keep</i></h1>
+
+    <div class="counter-container">
+        <i class="fas fa-mug-hot fa-3x"></i>
+        <div class="counter" data-target="4000"></div>
+        <span>Project Completed</span>
     </div>
 
-    <div class="btn-div">
-        <button class="learn-more" class="add" id="add">
-        <span class="circle" aria-hidden="true">
-            <span class="icon arrow"></span>
-        </span>
-        <span class="button-text">Add note</span>
-    </button>
+    <div class="counter-container">
+        <i class="fas fa-users fa-3x"></i>
+        <div class="counter" data-target="15000"></div>
+        <span>Our Happy Clients</span>
+    </div>
+
+    <div class="counter-container">
+        <i class="fas fa-tasks fa-3x"></i>
+        <div class="counter" data-target="500"></div>
+        <span>Ongoing Projects </span>
     </div>
     <script src="script.js"></script>
 </body>
-
 </html>
+
+<!-- data-* attributes are designed to hold custom data for custom code 
+(typically client side JS) to process. -->
