@@ -5,7 +5,10 @@
     box-sizing: border-box;
 }
 
-
+a{
+    color: #111;
+    text-decoration: none;
+}
 .btn{
     padding: 10px 20px; /*top-bottom left-right */
     margin: 0 5px; /*top-bottom left-right */
@@ -41,22 +44,25 @@ body {
     background-color: #fff;
     border-radius: 5px;
 }
-h3{
+h1{
     font-size: 1.1rem;
     color: #888;
     margin-bottom: 20px;
     text-decoration: underline;
 }
 /* joke text */
-.joke {
+.joke-text {
     font-size: 1.8rem;
     margin-bottom: 30px;
     font-family: monospace;
 }
 
 /* new -joke-btn */
-.jokeBtn {
+.new-joke-btn {
     background-color: #FF0000;
 }
 
-
+.share-btn {
+    background-color: #25d366;
+    margin-bottom: 30px;
+} 
