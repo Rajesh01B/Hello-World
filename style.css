@@ -1,68 +1,57 @@
-/* common styles */
 *{
-    padding: 0;
-    margin: 0;
     box-sizing: border-box;
 }
-
-a{
-    color: #111;
-    text-decoration: none;
-}
-.btn{
-    padding: 10px 20px; /*top-bottom left-right */
-    margin: 0 5px; /*top-bottom left-right */
-    font-size: 0.99rem;
-    border-radius: 3px;
-    outline: none;
-    border: none;
-    color: #fff;
-    background-color: blue; /* default color */
-}
-
-.btn:hover {
-    cursor: pointer; /* hand symbol */
-}
-
-/* body */
 body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    background-color: #682A7E;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center; /*horizontally center*/
-    align-items: center; /*vertically center */
-    text-align: center;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    width: 500px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
-/* container */
-.container {
-    width: 450px;
-    padding: 50px 20px; /*top-botoom left-right */
-    background-color: #fff;
+.text-box {
+    
+    max-width: 400px;
+    margin: 0 auto;
+    border: 2px solid #111;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200%;
+}
+
+    
+
+.btn-container {
+    /* position: relative; */
+    /* right: 250px;
+    left: 250px;
+    top: 155px; */
+    background-color: black;
+    color: grey;
+    gap: 1px white;
+    display: grid;
+    grid-template-columns:auto auto auto auto;
+}
+.calc-btn{
+    background: grey;
+    border: 1px solid black;
+    text-align: center;
+    font-size: x-large;
+    cursor: pointer;
     border-radius: 5px;
 }
-h1{
-    font-size: 1.1rem;
-    color: #888;
-    margin-bottom: 20px;
-    text-decoration: underline;
-}
-/* joke text */
-.joke-text {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    font-family: monospace;
+
+.is-equal {
+    grid-column: span 2;
+    background: orangered;
 }
 
-/* new -joke-btn */
-.new-joke-btn {
-    background-color: #FF0000;
+.is-clear{
+    background-color: green;
+}
+.is-backspace {
+    background-color: red;
 }
 
-.share-btn {
-    background-color: #25d366;
-    margin-bottom: 30px;
-} 
