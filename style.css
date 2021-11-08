@@ -1,68 +1,31 @@
-/* common styles */
-*{
-    padding: 0;
+@import url("https://fonts.googleapis.com/css2?family=mulish:wght@300&display=swap");
+
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
+    font-family: "mulish",sans-serif;
 }
 
-a{
-    color: #111;
-    text-decoration: none;
-}
-.btn{
-    padding: 10px 20px; /*top-bottom left-right */
-    margin: 0 5px; /*top-bottom left-right */
-    font-size: 0.99rem;
-    border-radius: 3px;
-    outline: none;
-    border: none;
-    color: #fff;
-    background-color: blue; /* default color */
-}
-
-.btn:hover {
-    cursor: pointer; /* hand symbol */
-}
-
-/* body */
-body {
+.outerDiv {
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
-    background-color: #682A7E;
-    font-family: sans-serif;
-    display: flex;
-    justify-content: center; /*horizontally center*/
-    align-items: center; /*vertically center */
-    text-align: center;
+    background: #2a364f;
+    display: grid;
+    place-items: center;
 }
 
-/* container */
-.container {
-    width: 450px;
-    padding: 50px 20px; /*top-botoom left-right */
-    background-color: #fff;
-    border-radius: 5px;
-}
-h1{
-    font-size: 1.1rem;
-    color: #888;
-    margin-bottom: 20px;
-    text-decoration: underline;
-}
-/* joke text */
-.joke-text {
-    font-size: 1.8rem;
-    margin-bottom: 30px;
-    font-family: monospace;
+.innerDiv {
+    width: 80vw;
+    height: 70vh;
+    display: grid;
+    place-items: center;
 }
 
-/* new -joke-btn */
-.new-joke-btn {
-    background-color: #FF0000;
+.main-heading {
+    padding: 30px;
+    /* color: #fff; */
+    color: #fff;
+    text-shadow: 0 1px 8px rgba(255, 255, 255, 0.5);
+    font-size: 200px;
 }
-
-.share-btn {
-    background-color: #25d366;
-    margin-bottom: 30px;
-} 
